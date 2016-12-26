@@ -3,42 +3,58 @@
 <head>
   <title>BV Aerosol</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="shortcut icon" type="image/x-icon'/" href="analytics.png">
+  <link rel="shortcut icon" type="image/x-icon'/" href="bv.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
-<body>
+<body background="bg.png">
   <div class="main_header">
-    <span>BV Aerosol</span>
+    <a href="index.html"><img src="bv.png" class="header_logo"></a>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="products.html">Products</a>
-      <a href="vision.html">Vision & Mission</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html"><img src="home.png" alt="home" ></a>
+      <a href="index.html"><span class="link_text">HOME</span></a>
+      <a href="products.html"><img src="products.png" alt="products"></a>
+      <a href="products.html"><span class="link_text">PRODUCTS</span></a>
+      <a href="vision.html"><img src="vision.png" alt="vision and mission"></a>
+      <a href="vision.html"><span class="link_text">VISION & MISSION</span></a>
+      <a href="contact.html"><img src="contact.png" alt="contact us"></a>
+      <a href="contact.html"><span class="link_text page_line">CONTACT</span></a>
     </nav>
   </div>
   <div>
-    <span>Quick links</span>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="products.html">Products</a>
-    <a href="vision.html">Vision & Mission</a>
-    <a href="contact.html">Contact</a>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.8963391020584!2d76.93690994983764!3d11.046398257135658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba858a2ce281277%3A0xfbb9bcfaafa137c5!2sBV+Aerosol!5e0!3m2!1sen!2sin!4v1482171054317" width="1292" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
-  <div>
-    <span>Contact us</span>
-    <form id="jsEnquiryForm" method="POST">
-      <input type="text" name="name" placeholder="Your name">
-      <input type="email" name="_replyto" placeholder="Your email">
-      <input type="hidden" name="_next" value="www.bvaerosol.com"/>
-      <input type="hidden" name="_subject" value="Website contact" />
-      <textarea name="message" placeholder="Your message"></textarea>
-      <input type="text" name="_gotcha" style="display:none" />
-      <input type="submit" value="Send">
-    </form>
-    <script>
-      var contactform =  document.getElementById('jsEnquiryForm');
-      contactform.setAttribute('action', '//formspree.io/' + 'bvaerosol1993' + '@' + 'gmail' + '.' + 'com');
-    </script>
+  <div class="container">
+    <div class="contact_address_form col-lg-12">
+      <div class="contact_address col-lg-7">
+        <h3>Contact</h3>
+        <div class="address_line">
+          <h4>Unit - 1</h4>
+          <p>1/5, Kannamal Nagar Road,<br>SP Nagar, Koundampalayam, <br>Coimbatore, Tamil Nadu<br>Contact: +91-9043-420-879<br>Email: bvaerosol1993@gmail.com</p>
+          <h4>Unit - 2</h4>
+          <p>No - 3, Jivdani Apartment,<br>Paramathma Nagar, Near star industrial estate waliv,<br>vasai(e) district palghar Mumbai, Maharashtra<br>Contact: +91-7887-661-017</p>
+        </div>
+      </div>
+      <div class="contact_form  col-lg-5">
+        <h3>Contact Form</h3>
+        <form id="jsEnquiryForm" method="POST">
+          <div class="form-group">
+            <input type="text" class="form-control" name="name" placeholder="Your name"><br>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" name="_replyto" placeholder="Your email"><br>
+          </div>
+          <input type="hidden" name="_next" value="index.html"/>
+          <input type="hidden" name="_subject" value="Website contact" />
+          <textarea name="message" class="form-control" placeholder="Your message"></textarea>
+          <input type="text" name="_gotcha" style="display:none" /><br>
+          <button type="submit" value="Send" class="btn btn-default">Submit</button>
+        </form>
+        <script>
+          var contactform =  document.getElementById('jsEnquiryForm');
+          contactform.setAttribute('action', '//formspree.io/' + 'bvaerosol1993' + '@' + 'gmail' + '.' + 'com');
+        </script>
+      </div>
+    </div>
   </div>
 </body>
 </html>
